@@ -1,4 +1,4 @@
-<h1>Start ourdb from now!!!<h1>
+<h1>Start ourdb from now!!!</h1>
 Ourdb is a middle level between application and mysql.<br>
 The purpose of Ourdb is make distrbited mysql cluster easily.<br>
 User can use it just like a mysql instance . JDBC is supported<br>
