@@ -1,1 +1,1 @@
- java -cp class/ DataServer
+ java -cp class/:lib/* MainTest
