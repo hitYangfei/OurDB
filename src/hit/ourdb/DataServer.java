@@ -27,6 +27,10 @@ public class DataServer implements IDataServer{
     this.port = port;
     initConnectionPool();
   }
+  public String getName()
+  {
+    return name;
+  }
   public void initConnectionPool()
   {
     try {

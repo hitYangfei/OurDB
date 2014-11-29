@@ -34,6 +34,13 @@ public class MainTest
     {
       doexec(ds4.getConnection(true));
     }
+    System.out.println("HADataSource test........");
+    DataSource ds5 = new HADataSource("ds5", ds1, ds2);
+    doexec(ds5.getConnection(true));
+    ds5.handleAbnormal(ds1);
+    doexec(ds5.getConnection(true));
+    ds5.handleWakeup(ds1);
+    doexec(ds5.getConnection(true));
   }
   public static void doexec(Connection conn)
   {

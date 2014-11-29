@@ -19,12 +19,12 @@ public class LoadBalanceDataSource extends DataSource {
   {
     return read_sources.get(0).getMaster();
   }
-  public void doHandleAbnormal(DataSource target)
+  public void doHandleAbnormal(DataSource source)
   {
     this.state = DataSourceWorkingState.SERVER_STOP;
     // todo notify parent;
   }
-  public void doHandleWakeup(DataSource target)
+  public void doHandleWakeup(DataSource source)
   {
     this.state = DataSourceWorkingState.WORKING;
     // todo notify parent;

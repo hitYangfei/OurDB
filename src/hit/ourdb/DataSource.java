@@ -20,6 +20,10 @@ public abstract class DataSource {
     this(name);
     this.master = master;
   }
+  public String getName()
+  {
+    return name;
+  }
   public void setParent(DataSource parnet)
   {
     this.parent = parent;
@@ -48,22 +52,20 @@ public abstract class DataSource {
   {
     return type;
   }
-  public void handleAbnormal(DataSource target)
+  public void handleAbnormal(DataSource source)
   {
-    System.out.println("aaa");
-    doHandleAbnormal(target);
+    doHandleAbnormal(source);
   }
-  public void handleWakeup(DataSource target)
+  public void handleWakeup(DataSource source)
   {
-    System.out.println("aaa");
-    doHandleWakeup(target);
+    doHandleWakeup(source);
   }
   public Connection getConnection(boolean isReadOnly)
   {
     return doGetConnection(isReadOnly);
   }
   public abstract DataServer doGetMaster();
-  public abstract void doHandleAbnormal(DataSource target);
-  public abstract void doHandleWakeup(DataSource target);
+  public abstract void doHandleAbnormal(DataSource source);
+  public abstract void doHandleWakeup(DataSource source);
   public abstract Connection doGetConnection(boolean isReadOnly);
 }
