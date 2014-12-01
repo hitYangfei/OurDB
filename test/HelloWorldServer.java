@@ -18,12 +18,9 @@ public class HelloWorldServer {
     protected Selector selector;
     protected ByteBuffer clientBuffer = ByteBuffer.allocate(BLOCK);
     protected CharsetDecoder decoder;
-    static CharsetEncoder encoder = Charset.forName("GB2312").newEncoder();
 
     public HelloWorldServer(int port) throws IOException {
         selector = this.getSelector(port);
-        Charset charset = Charset.forName("GB2312");
-        decoder = charset.newDecoder();
     }
 
     // 获取Selector
@@ -50,7 +47,7 @@ public class HelloWorldServer {
             }
         } catch (IOException e) {
           System.out.println("error ");
-            e.printStackTrace();
+          e.printStackTrace();
         }
     }
 
@@ -64,13 +61,13 @@ public class HelloWorldServer {
             channel.register(selector, SelectionKey.OP_READ);
         } else if (key.isReadable()) { // 读信息
             SocketChannel channel = (SocketChannel) key.channel();
+            clientBuffer.clear();
             int count = channel.read(clientBuffer);
             if (count > 0) {
                 clientBuffer.flip();
- //               CharBuffer charBuffer = decoder.decode(clientBuffer);
                 while (clientBuffer.remaining()>0) {
                   byte b = clientBuffer.get();
-                  System.out.print(((char)b));
+                  System.out.print((char)b);
                 }
                 System.out.println();
                 SelectionKey sKey = channel.register(selector, SelectionKey.OP_WRITE);
@@ -83,14 +80,12 @@ public class HelloWorldServer {
         } else if (key.isWritable()) { // 写事件
           SocketChannel channel = (SocketChannel) key.channel();
           String name = (String) key.attachment();
+          clientBuffer.clear();
+          clientBuffer.put("hello yf!".getBytes());
+          clientBuffer.flip();
+          channel.write(clientBuffer);
 
-          //            ByteBuffer block = encoder.encode(CharBuffer.wrap("Hello !" + name));
-          ByteBuffer block = ByteBuffer.allocate(128);
-          block.put("hello yf!".getBytes());
-          block.flip();
-          channel.write(block);
-
-          //channel.close();
+          channel.close();
 
         }
     }
