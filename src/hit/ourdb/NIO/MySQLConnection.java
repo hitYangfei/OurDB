@@ -1,3 +1,5 @@
+package hit.ourdb.NIO;
+
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
@@ -9,10 +11,10 @@ import java.nio.charset.Charset;
 import java.nio.charset.CharsetEncoder;
 import java.util.Iterator;
 
-public class HelloWorldClient {
+public class MySQLConnection {
 
-    static int SIZE = 10;
-    static InetSocketAddress ip = new InetSocketAddress("localhost", 8888);
+    static int SIZE = 1;
+    static InetSocketAddress ip = new InetSocketAddress("192.168.122.13", 3306);
 
     static class Message implements Runnable {
         protected String name;
@@ -36,7 +38,7 @@ public class HelloWorldClient {
                 //连接
                 client.connect(ip);
                 //分配内存
-                ByteBuffer buffer = ByteBuffer.allocate(8 * 1024);
+                ByteBuffer buffer = ByteBuffer.allocate(1024);
                 int total = 0;
 
                 _FOR: for (;;) {
@@ -53,10 +55,10 @@ public class HelloWorldClient {
                             SocketChannel channel = (SocketChannel) key.channel();
                             if (channel.isConnectionPending())
                                 channel.finishConnect();
-                            System.out.println(name + " is writing");
+ /*                           System.out.println(name + " is writing");
                             buffer.put(name.getBytes());
                             buffer.flip();
-                            channel.write(buffer);
+                            channel.write(buffer);*/
                             channel.register(selector, SelectionKey.OP_READ);
                           } else if (key.isReadable()) {
                             System.out.println(name + " is reading");
@@ -68,9 +70,11 @@ public class HelloWorldClient {
                               buffer.flip();
                               while (buffer.remaining() > 0) {
                                 byte b = buffer.get();
-                                msg += (char) b;
+ //                               msg += (char) b;
+                                System.out.print(b);
                               }
                             }
+                            System.out.println();
                             break _FOR;
                           }
                         }

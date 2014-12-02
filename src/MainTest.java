@@ -5,14 +5,30 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.io.IOException;
 import java.sql.Statement;
 import java.sql.Types;
 import java.util.ArrayList;
+import java.net.InetSocketAddress;
+
 import hit.ourdb.*;
+import hit.ourdb.NIO.*;
 
 public class MainTest
 {
   public static void main(String[] argvs)
+  {
+    try {
+    InetSocketAddress ip = new InetSocketAddress("192.168.122.13", 3306);
+    NIOConnection conn = new BackendConnection();
+    NIOReactor worker = new NIOReactor("worker1");
+    conn.connect(ip);
+    worker.start();
+    } catch(IOException e) {
+      System.out.println(e);
+    }
+  }
+  public static void DataSource()
   {
     System.out.println("ServerDataSource test........");
     DataServer s1 = new DataServer("server1", "root", "", "192.168.122.13", 3306);
