@@ -15,11 +15,13 @@
  */
 package hit.ourdb.NIO;
 
+import hit.ourdb.NIO.procotol.*;
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
 import java.nio.channels.SocketChannel;
+import java.nio.ByteBuffer;
 
 
 /**
@@ -27,7 +29,31 @@ import java.nio.channels.SocketChannel;
  */
 public class BackendConnection extends AbstractConnection {
 
-    public BackendConnection() throws IOException {
-        super();
+    public BackendConnection(InetSocketAddress address) throws IOException {
+        super(address);
+    }
+    public boolean finishConnect() throws IOException {
+      if (channel.isConnectionPending()) {
+        channel.finishConnect();
+        System.out.println("finish connct in BackendConnection");
+        return true;
+      } else {
+        return false;
+      }
+    }
+    @Override
+    public void read() throws IOException {
+      System.out.println("begin read data in BackendCon");
+      ByteBuffer buffer = super.readBuffer;
+      buffer.clear();
+      int count = channel.read(buffer);
+      if (count > 0) {
+        MySQLPacket packet = new MySQLHandshake(buffer);
+        packet.unpack();
+      }
+      if (count >= 1024) {
+        System.out.println("clientbuffer is too small.[1024]");
+      }
+      System.out.println();
     }
 }

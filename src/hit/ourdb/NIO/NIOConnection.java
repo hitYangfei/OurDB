@@ -29,7 +29,9 @@ public interface NIOConnection {
      * 注册网络事件
      */
     void register(Selector selector) throws IOException;
-    void connect(InetSocketAddress address) throws IOException;
+    /*
+     */
+    void connect(Selector selector) throws IOException;
 
     /**
      * 读取数据

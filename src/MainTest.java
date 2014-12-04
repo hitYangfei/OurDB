@@ -19,11 +19,13 @@ public class MainTest
   public static void main(String[] argvs)
   {
     try {
-    InetSocketAddress ip = new InetSocketAddress("192.168.122.13", 3306);
-    NIOConnection conn = new BackendConnection();
-    NIOReactor worker = new NIOReactor("worker1");
-    conn.connect(ip);
-    worker.start();
+    InetSocketAddress ip = new InetSocketAddress("127.0.0.1", 3306);
+    BackendConnection conn = new BackendConnection(ip);
+    NIOWorker  worker = new NIOWorker();
+    worker.addConnect(conn);
+    
+    worker.startup();
+    
     } catch(IOException e) {
       System.out.println(e);
     }

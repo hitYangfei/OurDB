@@ -1,21 +1,20 @@
 /*
  * Copyright 1999-2012 Alibaba Group.
- *
+ *  
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- *
+ *  
  *      http://www.apache.org/licenses/LICENSE-2.0
- *
+ *  
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package hit.ourdb.procotol;
+package hit.ourdb.NIO.procotol;
 
-import java.nio.ByteBuffer;
 import java.io.UnsupportedEncodingException;
 import java.math.BigDecimal;
 import java.sql.Time;
@@ -23,28 +22,19 @@ import java.sql.Timestamp;
 import java.util.Arrays;
 import java.util.Calendar;
 
-public class PacketUtils {
+public class MySQLMessage {
     public static final long NULL_LENGTH = -1;
     private static final byte[] EMPTY_BYTES = new byte[0];
 
     private final byte[] data;
     private final int length;
     private int position;
-    private ByteBuffer buffer;
 
-    public PacketUtils(ByteBuffer buffer)
-    {
-      this.data = buffer.array();
-      this.length = data.length;
-      this.position = 0;
-
+    public MySQLMessage(byte[] data) {
+        this.data = data;
+        this.length = data.length;
+        this.position = 0;
     }
-    public PacketUtils(byte[] data) {
-      this.data = data;
-      this.length = data.length;
-      this.position = 0;
-    }
-
 
     public int length() {
         return length;
@@ -84,7 +74,6 @@ public class PacketUtils {
         i |= (b[position++] & 0xff) << 8;
         return i;
     }
-
 
     public int readUB3() {
         final byte[] b = this.data;

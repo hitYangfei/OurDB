@@ -37,71 +37,68 @@ public final class NIOReactor extends Thread{
 
     private final String name;
     private final Selector selector;
- //   private final BlockingQueue<NIOConnection> registerQueue;
+    private final BlockingQueue<NIOConnection> registerQueue;
 
     public NIOReactor(String name) throws IOException {
       BasicConfigurator.configure();
       this.name = name;
       this.selector = Selector.open();
-   //     this.registerQueue = new LinkedBlockingQueue<NIOConnection>();
+      this.registerQueue = new LinkedBlockingQueue<NIOConnection>();
     }
 
-   /* final void postRegister(NIOConnection c) {
+    final void postRegister(NIOConnection c) {
         registerQueue.offer(c);
         selector.wakeup();
     }
 
     final BlockingQueue<NIOConnection> getRegisterQueue() {
         return registerQueue;
-    }*/
+    }
 
     @Override
     public void run() {
-        final Selector selector = this.selector;
-  _FOR: for (;;) {
-            try {
-                // OP_CONNECT
-              register(selector);
+      final Selector selector = this.selector;
+      for (;;) {
+          try {
               selector.select(1000L);
-              Iterator iter = selector.selectedKeys().iterator();
-              while (iter.hasNext()) {
-                SelectionKey key = (SelectionKey) iter.next();
-                iter.remove();
-                if (key.isConnectable()) {
-                  logger.debug(name + " is connecting");
-                  SocketChannel channel = (SocketChannel) key.channel();
-                  if (channel.isConnectionPending())
-                    channel.finishConnect();
-                  register(selector);
-                } else if (key.isReadable()) {
-                  logger.debug(name + " is reading");
-                  Object att = key.attachment();
-                  if (att != null && key.isValid()) {
-                    read((NIOConnection) att);
+              register(selector);
+              Set<SelectionKey> keys = selector.selectedKeys();
+              try {
+                  for (SelectionKey key : keys) {
+                      Object att = key.attachment();
+                      if (att != null && key.isValid()) {
+                          int readyOps = key.readyOps();
+                          if ((readyOps & SelectionKey.OP_READ) != 0) {
+                              System.out.println("read data");
+                              read((NIOConnection) att);
+                          } else if ((readyOps & SelectionKey.OP_WRITE) != 0) {
+                              write((NIOConnection) att);
+                          } else {
+                              key.cancel();
+                          }
+                      } else {
+                          key.cancel();
+                      }
                   }
-                  break _FOR;
-                } // wirte process code
+              } finally {
+                  keys.clear();
               }
-            } catch (Throwable e) {
-                logger.warn(name, e);
-            }
-        }
+          } catch (Throwable e) {
+              logger.warn(name, e);
+          }
+      }
+
     }
 
     private void register(Selector selector) {
-        NIOConnection c = null;
-        try {
-        c.register(selector);
-        } catch(IOException e) {
-          logger.debug(e);
-        }
- /*       while ((c = registerQueue.poll()) != null) {
-            try {
-                c.register(selector);
-            } catch (Throwable e) {
-                c.error(ErrorCode.ERR_REGISTER, e);
-            }
-        }*/
+      NIOConnection c = null;
+      while ((c = registerQueue.poll()) != null) {
+          try {
+              c.register(selector);
+          } catch (Throwable e) {
+            logger.debug("register in reactor occur error");
+          }
+      }
     }
 
     private void read(NIOConnection c) {
@@ -116,7 +113,7 @@ public final class NIOReactor extends Thread{
         try {
             c.write();
         } catch (Throwable e) {
-          logger.debug("read error");
+          logger.debug("write error");
         }
     }
 

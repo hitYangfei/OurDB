@@ -40,14 +40,16 @@ public abstract class AbstractConnection implements NIOConnection {
     protected SelectionKey processKey;
     protected ByteBuffer readBuffer;
     protected boolean isConnect;
+    protected InetSocketAddress address;
 
-    public AbstractConnection() throws IOException {
+    public AbstractConnection(InetSocketAddress address) throws IOException {
        //打开Socket通道
        channel = SocketChannel.open();
        //设置为非阻塞模式
        channel.configureBlocking(false);
        readBuffer = ByteBuffer.allocate(1024);
        isConnect = false;
+       this.address = address;
     }
 
     public SocketChannel getChannel() {
@@ -57,16 +59,8 @@ public abstract class AbstractConnection implements NIOConnection {
 
     @Override
     public void register(Selector selector) throws IOException {
-        try {
-            if (isConnect) {
-              processKey = channel.register(selector, SelectionKey.OP_READ, this);
-              isConnect = true;
-            }
-            else
-              processKey = channel.register(selector, SelectionKey.OP_CONNECT, this);
-        } finally {
-          logger.debug("register");
-        }
+        channel.register(selector, SelectionKey.OP_READ, this);
+        logger.debug("register OP_READ");
     }
 
     @Override
@@ -75,12 +69,16 @@ public abstract class AbstractConnection implements NIOConnection {
         int got = channel.read(buffer);
 
         // 处理数据
-        logger.debug("read data");
+        System.out.println("read data");
 
     }
-    public void connect(InetSocketAddress address) throws IOException {
+    @Override
+    public void connect(Selector selector) throws IOException {
       channel.connect(address);
+      channel.register(selector, SelectionKey.OP_CONNECT, this);
+      logger.debug("connect register OP_CONNECT");
     }
+
 
     @Override
     public void write() {

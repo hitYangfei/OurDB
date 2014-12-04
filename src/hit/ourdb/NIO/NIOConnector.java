@@ -1,19 +1,19 @@
 /*
  * Copyright 1999-2012 Alibaba Group.
- *  
+ *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- *  
+ *
  *      http://www.apache.org/licenses/LICENSE-2.0
- *  
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.alibaba.cobar.net;
+package hit.ourdb.NIO;
 
 import java.io.IOException;
 import java.nio.channels.SelectionKey;
@@ -24,21 +24,17 @@ import java.util.concurrent.LinkedBlockingQueue;
 
 import org.apache.log4j.Logger;
 
-import com.alibaba.cobar.config.ErrorCode;
 
 /**
  * @author xianmao.hexm
  */
 public final class NIOConnector extends Thread {
     private static final Logger LOGGER = Logger.getLogger(NIOConnector.class);
-    private static final ConnectIdGenerator ID_GENERATOR = new ConnectIdGenerator();
 
     private final String name;
     private final Selector selector;
     private final BlockingQueue<BackendConnection> connectQueue;
-    private NIOProcessor[] processors;
-    private int nextProcessor;
-    private long connectCount;
+    private NIOWorker worker;
 
     public NIOConnector(String name) throws IOException {
         super.setName(name);
@@ -47,15 +43,10 @@ public final class NIOConnector extends Thread {
         this.connectQueue = new LinkedBlockingQueue<BackendConnection>();
     }
 
-    public long getConnectCount() {
-        return connectCount;
+    public void setWorker(NIOWorker worker) {
+      this.worker = worker;
     }
-
-    public void setProcessors(NIOProcessor[] processors) {
-        this.processors = processors;
-    }
-
-    public void postConnect(BackendConnection c) {
+    public void addConnect(BackendConnection c) {
         connectQueue.offer(c);
         selector.wakeup();
     }
@@ -64,7 +55,6 @@ public final class NIOConnector extends Thread {
     public void run() {
         final Selector selector = this.selector;
         for (;;) {
-            ++connectCount;
             try {
                 selector.select(1000L);
                 connect(selector);
@@ -88,14 +78,15 @@ public final class NIOConnector extends Thread {
     }
 
     private void connect(Selector selector) {
-        BackendConnection c = null;
-        while ((c = connectQueue.poll()) != null) {
-            try {
-                c.connect(selector);
-            } catch (Throwable e) {
-                c.error(ErrorCode.ERR_CONNECT_SOCKET, e);
-            }
-        }
+      BackendConnection c = null;
+      while ((c = connectQueue.poll()) != null) {
+          try {
+              c.connect(selector);
+          } catch (Throwable e) {
+             // c.error(ErrorCode.ERR_CONNECT_SOCKET, e);
+             System.out.println("connect error in NIOConnector");
+          }
+      }
     }
 
     private void finishConnect(SelectionKey key, Object att) {
@@ -103,14 +94,14 @@ public final class NIOConnector extends Thread {
         try {
             if (c.finishConnect()) {
                 clearSelectionKey(key);
-                c.setId(ID_GENERATOR.getId());
-                NIOProcessor processor = nextProcessor();
+ /*               NIOProcessor processor = nextProcessor();
                 c.setProcessor(processor);
-                processor.postRegister(c);
+                processor.postRegister(c);*/
+                worker.postRegister(c);
             }
         } catch (Throwable e) {
             clearSelectionKey(key);
-            c.error(ErrorCode.ERR_FINISH_CONNECT, e);
+            System.out.println("in finishConnect");
         }
     }
 
@@ -121,19 +112,19 @@ public final class NIOConnector extends Thread {
         }
     }
 
-    private NIOProcessor nextProcessor() {
+ /*   private NIOProcessor nextProcessor() {
         if (++nextProcessor == processors.length) {
             nextProcessor = 0;
         }
         return processors[nextProcessor];
     }
-
+*/
     /**
      * 后端连接ID生成器
-     * 
+     *
      * @author xianmao.hexm
      */
-    private static class ConnectIdGenerator {
+  /*  private static class ConnectIdGenerator {
 
         private static final long MAX_VALUE = Long.MAX_VALUE;
 
@@ -148,6 +139,6 @@ public final class NIOConnector extends Thread {
                 return ++connectId;
             }
         }
-    }
+    }*/
 
 }
