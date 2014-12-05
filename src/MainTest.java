@@ -10,15 +10,28 @@ import java.sql.Statement;
 import java.sql.Types;
 import java.util.ArrayList;
 import java.net.InetSocketAddress;
+import org.apache.log4j.Logger;
+import org.apache.log4j.helpers.LogLog;
+import org.apache.log4j.PropertyConfigurator;
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.xml.DOMConfigurator;
 
 import hit.ourdb.*;
 import hit.ourdb.NIO.*;
 
 public class MainTest
 {
+  private static final long LOG_WATCH_DELAY = 60000L;
+  private static final Logger logger = Logger.getLogger(MainTest.class);
   public static void main(String[] argvs)
   {
     try {
+    BasicConfigurator.configure();
+    PropertyConfigurator.configure("/home/yangfei/dbscale/ourdb/src/log4j.xml");
+ //   DOMConfigurator.configure("");
+
+//    Log4jInitializer.configureAndWatch("/home/yangfei/dbscale/ourdb/src/log4j.xml", LOG_WATCH_DELAY);
+    logger.info("start test");
     InetSocketAddress ip = new InetSocketAddress("127.0.0.1", 3306);
     BackendConnection conn = new BackendConnection(ip);
     NIOWorker  worker = new NIOWorker();

@@ -1,0 +1,5 @@
+[2014-12-06 00:28:40 DEBUG] [main] (externalxmltest:7) - Here is some DEBUG
+[2014-12-06 00:28:40 INFO ] [main] (externalxmltest:8) - Here is some INFO
+[2014-12-06 00:28:40 WARN ] [main] (externalxmltest:9) - Here is some WARN
+[2014-12-06 00:28:40 ERROR] [main] (externalxmltest:10) - Here is some ERROR
+[2014-12-06 00:28:40 FATAL] [main] (externalxmltest:11) - Here is some FATAL

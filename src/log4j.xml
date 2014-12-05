@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+  <appender name="MAINLOGGER" class="org.apache.log4j.DailyRollingFileAppender">
+    <param name="File" value="/home/yangfei/dbscale/ourdb/log/daily.log" />     
+    <param name="DatePattern" value="'daily.'yyyy-MM-dd'.log'" />     
+    <layout class="org.apache.log4j.PatternLayout">     
+      <param name="ConversionPattern" value="[%d{yyyy-MM-dd HH:mm:ss} %-5p] [%t] (%c:%L) - %m%n" />     
+    </layout>         
+  </appender>
+  <root>  
+    <priority value ="debug"/>  
+    <appender-ref ref="MAINLOGGER"/>  
+  </root> 
+
+</log4j:configuration>

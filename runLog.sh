@@ -1,1 +1,1 @@
- java -cp class/:lib/* MySQLConnection
+ java -cp class/:lib/* HelloLog
