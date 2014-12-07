@@ -1,18 +1,3 @@
-/*
- * Copyright 1999-2012 Alibaba Group.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
 package hit.ourdb.NIO;
 
 import java.io.IOException;
@@ -24,7 +9,6 @@ import java.util.Set;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 import org.apache.log4j.Logger;
-import org.apache.log4j.BasicConfigurator;
 
 
 /**
@@ -40,7 +24,6 @@ public final class NIOReactor extends Thread{
     private final BlockingQueue<NIOConnection> registerQueue;
 
     public NIOReactor(String name) throws IOException {
-      BasicConfigurator.configure();
       this.name = name;
       this.selector = Selector.open();
       this.registerQueue = new LinkedBlockingQueue<NIOConnection>();
@@ -69,7 +52,6 @@ public final class NIOReactor extends Thread{
                       if (att != null && key.isValid()) {
                           int readyOps = key.readyOps();
                           if ((readyOps & SelectionKey.OP_READ) != 0) {
-                              System.out.println("read data");
                               read((NIOConnection) att);
                           } else if ((readyOps & SelectionKey.OP_WRITE) != 0) {
                               write((NIOConnection) att);
@@ -96,7 +78,7 @@ public final class NIOReactor extends Thread{
           try {
               c.register(selector);
           } catch (Throwable e) {
-            logger.debug("register in reactor occur error");
+            logger.error("register in reactor occur error");
           }
       }
     }
@@ -105,7 +87,7 @@ public final class NIOReactor extends Thread{
         try {
             c.read();
         } catch (Throwable e) {
-          logger.debug("read error");
+          logger.error("read error");
         }
     }
 
@@ -113,7 +95,7 @@ public final class NIOReactor extends Thread{
         try {
             c.write();
         } catch (Throwable e) {
-          logger.debug("write error");
+          logger.error("write error");
         }
     }
 

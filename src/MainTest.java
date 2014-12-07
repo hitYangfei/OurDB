@@ -21,19 +21,15 @@ import hit.ourdb.NIO.*;
 
 public class MainTest
 {
-  private static final long LOG_WATCH_DELAY = 60000L;
   private static final Logger logger = Logger.getLogger(MainTest.class);
   public static void main(String[] argvs)
   {
     try {
-    BasicConfigurator.configure();
-    PropertyConfigurator.configure("/home/yangfei/dbscale/ourdb/src/log4j.xml");
- //   DOMConfigurator.configure("");
-
-//    Log4jInitializer.configureAndWatch("/home/yangfei/dbscale/ourdb/src/log4j.xml", LOG_WATCH_DELAY);
+    DOMConfigurator.configure("/home/yangfei/dbscale/ourdb/src/log4j.xml");
     logger.info("start test");
     InetSocketAddress ip = new InetSocketAddress("127.0.0.1", 3306);
     BackendConnection conn = new BackendConnection(ip);
+    logger.info("start a worker");
     NIOWorker  worker = new NIOWorker();
     worker.addConnect(conn);
     

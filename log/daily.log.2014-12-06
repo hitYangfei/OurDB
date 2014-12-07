@@ -1,0 +1,73 @@
+[2014-12-06 20:04:23 INFO ] [main] (MainTest:29) - start test
+[2014-12-06 20:04:23 INFO ] [main] (MainTest:32) - start a worker
+[2014-12-06 20:04:23 INFO ] [connector] (hit.ourdb.NIO.AbstractConnection:64) - connect register OP_CONNECT
+[2014-12-06 20:04:23 INFO ] [connector] (hit.ourdb.NIO.BackendConnection:21) - finish connect in BackendConnection
+[2014-12-06 20:04:23 INFO ] [Thread-0] (hit.ourdb.NIO.AbstractConnection:48) - register OP_READ
+[2014-12-06 20:04:23 INFO ] [Thread-0] (hit.ourdb.NIO.BackendConnection:29) - begin read data in BackendConnection
+[2014-12-06 20:04:23 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:28) - Begin unpack MySQLPacket
+[2014-12-06 20:04:23 DEBUG] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:33) - unpack MySQLHandshake
+[2014-12-06 20:04:23 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:31) - finish unpack MySQLPacket
+[2014-12-06 20:17:38 INFO ] [main] (MainTest:29) - start test
+[2014-12-06 20:17:38 INFO ] [main] (MainTest:32) - start a worker
+[2014-12-06 20:17:38 INFO ] [connector] (hit.ourdb.NIO.AbstractConnection:64) - connect register OP_CONNECT
+[2014-12-06 20:17:38 INFO ] [connector] (hit.ourdb.NIO.BackendConnection:21) - finish connect in BackendConnection
+[2014-12-06 20:17:38 INFO ] [Thread-0] (hit.ourdb.NIO.AbstractConnection:48) - register OP_READ
+[2014-12-06 20:17:38 INFO ] [Thread-0] (hit.ourdb.NIO.BackendConnection:29) - begin read data in BackendConnection
+[2014-12-06 20:17:38 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:28) - Begin unpack MySQLPacket
+[2014-12-06 20:17:38 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:22) - length of the packet is 78
+[2014-12-06 20:17:38 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:24) - num of the packet is 0
+[2014-12-06 20:17:38 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:25) - a
+[2014-12-06 20:17:38 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:34) - unpack MySQLHandshake
+[2014-12-06 20:17:38 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:31) - finish unpack MySQLPacket
+[2014-12-06 20:19:25 INFO ] [main] (MainTest:29) - start test
+[2014-12-06 20:19:25 INFO ] [main] (MainTest:32) - start a worker
+[2014-12-06 20:19:25 INFO ] [connector] (hit.ourdb.NIO.AbstractConnection:64) - connect register OP_CONNECT
+[2014-12-06 20:19:25 INFO ] [connector] (hit.ourdb.NIO.BackendConnection:21) - finish connect in BackendConnection
+[2014-12-06 20:19:25 INFO ] [Thread-0] (hit.ourdb.NIO.AbstractConnection:48) - register OP_READ
+[2014-12-06 20:19:25 INFO ] [Thread-0] (hit.ourdb.NIO.BackendConnection:29) - begin read data in BackendConnection
+[2014-12-06 20:19:25 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:28) - Begin unpack MySQLPacket
+[2014-12-06 20:19:25 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:22) - length of the packet is 78
+[2014-12-06 20:19:25 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:24) - num of the packet is 0
+[2014-12-06 20:19:25 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:25) - protocal version is a
+[2014-12-06 20:19:25 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:34) - unpack MySQLHandshake
+[2014-12-06 20:19:25 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:31) - finish unpack MySQLPacket
+[2014-12-06 20:21:27 INFO ] [main] (MainTest:29) - start test
+[2014-12-06 20:21:27 INFO ] [main] (MainTest:32) - start a worker
+[2014-12-06 20:21:27 INFO ] [connector] (hit.ourdb.NIO.AbstractConnection:64) - connect register OP_CONNECT
+[2014-12-06 20:21:27 INFO ] [connector] (hit.ourdb.NIO.BackendConnection:21) - finish connect in BackendConnection
+[2014-12-06 20:21:27 INFO ] [Thread-0] (hit.ourdb.NIO.AbstractConnection:48) - register OP_READ
+[2014-12-06 20:21:27 INFO ] [Thread-0] (hit.ourdb.NIO.BackendConnection:29) - begin read data in BackendConnection
+[2014-12-06 20:21:27 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:28) - Begin unpack MySQLPacket
+[2014-12-06 20:21:27 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:22) - length of the packet is 78
+[2014-12-06 20:21:27 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:24) - num of the packet is 0
+[2014-12-06 20:21:27 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:25) - protocal version is 0xa
+[2014-12-06 20:21:27 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:34) - unpack MySQLHandshake
+[2014-12-06 20:21:27 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:31) - finish unpack MySQLPacket
+[2014-12-06 20:24:42 INFO ] [main] (MainTest:29) - start test
+[2014-12-06 20:24:42 INFO ] [main] (MainTest:32) - start a worker
+[2014-12-06 20:24:42 INFO ] [connector] (hit.ourdb.NIO.AbstractConnection:64) - connect register OP_CONNECT
+[2014-12-06 20:24:42 INFO ] [connector] (hit.ourdb.NIO.BackendConnection:21) - finish connect in BackendConnection
+[2014-12-06 20:24:42 INFO ] [Thread-0] (hit.ourdb.NIO.AbstractConnection:48) - register OP_READ
+[2014-12-06 20:24:42 INFO ] [Thread-0] (hit.ourdb.NIO.BackendConnection:29) - begin read data in BackendConnection
+[2014-12-06 20:24:42 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:28) - Begin unpack MySQLPacket
+[2014-12-06 20:24:42 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:22) - length of the packet is 78
+[2014-12-06 20:24:42 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:24) - num of the packet is 0
+[2014-12-06 20:24:42 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:25) - protocal version is 0xa
+[2014-12-06 20:24:42 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:27) - server version is 5.6.12-log
+[2014-12-06 20:24:42 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:35) - unpack MySQLHandshake
+[2014-12-06 20:24:42 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:31) - finish unpack MySQLPacket
+[2014-12-06 20:56:20 INFO ] [main] (MainTest:29) - start test
+[2014-12-06 20:56:20 INFO ] [main] (MainTest:32) - start a worker
+[2014-12-06 20:56:20 INFO ] [connector] (hit.ourdb.NIO.AbstractConnection:64) - connect register OP_CONNECT
+[2014-12-06 20:56:20 INFO ] [connector] (hit.ourdb.NIO.BackendConnection:21) - finish connect in BackendConnection
+[2014-12-06 20:56:20 INFO ] [Thread-0] (hit.ourdb.NIO.AbstractConnection:48) - register OP_READ
+[2014-12-06 20:56:20 INFO ] [Thread-0] (hit.ourdb.NIO.BackendConnection:29) - begin read data in BackendConnection
+[2014-12-06 20:56:20 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:28) - Begin unpack MySQLPacket
+[2014-12-06 20:56:20 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:22) - length of the packet is 78
+[2014-12-06 20:56:20 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:24) - num of the packet is 0
+[2014-12-06 20:56:20 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:25) - protocal version is 0xa
+[2014-12-06 20:56:20 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:27) - server version is 5.6.12-log
+[2014-12-06 20:56:20 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:29) - thread id is 340
+[2014-12-06 20:56:20 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:31) - seed is g/S6Po`q
+[2014-12-06 20:56:20 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:37) - unpack MySQLHandshake
+[2014-12-06 20:56:20 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:31) - finish unpack MySQLPacket

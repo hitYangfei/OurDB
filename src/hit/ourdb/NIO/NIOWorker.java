@@ -14,7 +14,6 @@ public class NIOWorker{
     connector.addConnect(c);
   }
   public void  postRegister(NIOConnection c) {
-    System.out.println("add a new connection in worker");
     reactor.postRegister(c);
   }
   public void startup() {

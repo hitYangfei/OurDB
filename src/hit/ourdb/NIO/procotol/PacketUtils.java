@@ -1,18 +1,3 @@
-/*
- * Copyright 1999-2012 Alibaba Group.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
 package hit.ourdb.NIO.procotol;
 
 import java.nio.ByteBuffer;
@@ -30,7 +15,6 @@ public class PacketUtils {
     private final byte[] data;
     private final int length;
     private int position;
-    private ByteBuffer buffer;
 
     public PacketUtils(ByteBuffer buffer)
     {
@@ -47,42 +31,42 @@ public class PacketUtils {
 
 
     public int length() {
-        return length;
+      return length;
     }
 
     public int position() {
-        return position;
+      return position;
     }
 
     public byte[] bytes() {
-        return data;
+      return data;
     }
 
     public void move(int i) {
-        position += i;
+      position += i;
     }
 
     public void position(int i) {
-        this.position = i;
+      this.position = i;
     }
 
     public boolean hasRemaining() {
-        return length > position;
+      return length > position;
     }
 
     public byte read(int i) {
-        return data[i];
+      return data[i];
     }
 
     public byte read() {
-        return data[position++];
+      return data[position++];
     }
 
     public int readUB2() {
-        final byte[] b = this.data;
-        int i = b[position++] & 0xff;
-        i |= (b[position++] & 0xff) << 8;
-        return i;
+      final byte[] b = this.data;
+      int i = b[position++] & 0xff;
+      i |= (b[position++] & 0xff) << 8;
+      return i;
     }
 
 

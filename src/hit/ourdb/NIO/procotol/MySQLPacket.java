@@ -1,7 +1,6 @@
 package hit.ourdb.NIO.procotol;
 
 import java.nio.ByteBuffer ;
-import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
 
 
@@ -16,23 +15,32 @@ public abstract class MySQLPacket {
   public MySQLPacket(ByteBuffer buffer)
   {
     packet = new PacketUtils(buffer);
-    BasicConfigurator.configure();
   }
   protected void unpackHeader()
   {
     this.packetLength = packet.readUB3();
-    System.out.println("length is " + packetLength);
+    logger.info("length of the packet is "+  packetLength);
     this.packetId = packet.read();
-    System.out.println("packet num is " + packetId);
+    logger.info("num of the packet is " + packetId);
   }
   public void unpack()
   {
- //   logger.debug("Begin unpack MySQLPacket");
-    System.out.println("Begin unpack MySQLPacket");
+    logger.info("Begin unpack MySQLPacket");
     unpackHeader();
     unpackBody();
-    logger.debug("finish unpack MySQLPacket");
+    logger.info("finish unpack MySQLPacket");
+  }
+  protected void packHeader()
+  {
+  }
+  public void pack()
+  {
+    logger.info("begin pack MySQLPacket");
+    packHeader();
+    packBody();
+    logger.info("finish pack MySQLPacet");
   }
   public abstract void unpackBody();
+  public abstract void packBody();
 }
 
