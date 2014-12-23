@@ -27,6 +27,16 @@ public abstract class AbstractConnection implements NIOConnection {
     protected boolean isConnect;
     protected InetSocketAddress address;
 
+
+    public AbstractConnection(String ip, int port) throws IOException {
+      address = new InetSocketAddress(ip, port);
+      //打开Socket通道
+      channel = SocketChannel.open();
+      //设置为非阻塞模式
+      channel.configureBlocking(false);
+      readBuffer = ByteBuffer.allocate(1024);
+      isConnect = false;
+    }
     public AbstractConnection(InetSocketAddress address) throws IOException {
        //打开Socket通道
        channel = SocketChannel.open();

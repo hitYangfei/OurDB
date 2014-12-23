@@ -19,6 +19,13 @@ public class MySQLHandshake extends MySQLPacket {
   {
     super(buffer);
   }
+  public byte[] getScramble() {
+    byte[] scramble = new byte[16];
+    System.arraycopy(seed, 0 ,scramble, 0, 8);
+    System.arraycopy(restOfScrambleBuff, 0 , scramble, 8, 8);
+    logger.debug("the scramble str is " + (new String(scramble)));
+    return scramble;
+  }
   public void unpackBody()
   {
     protocolVersion = packet.read();
@@ -60,5 +67,36 @@ public class MySQLHandshake extends MySQLPacket {
     logger.info("packet position is " + packet.position());
     logger.info("packet length is " + packet.length());
     logger.info("unpack MySQLHandshake");
+  }
+  public void packBody()
+  {
+    logger.debug("not support now");
+  }
+  public int getPacketLength()
+  {
+    /*
+1              [0a] protocol version
+string[NUL]    server version
+4              connection id
+string[8]      auth-plugin-data-part-1
+1              [00] filler
+2              capability flags (lower 2 bytes)
+  if more data in the packet:
+1              character set
+2              status flags
+2              capability flags (upper 2 bytes)
+  if capabilities & CLIENT_PLUGIN_AUTH {
+1              length of auth-plugin-data
+  } else {
+1              [00]
+  }
+string[10]     reserved (all [00])
+  if capabilities & CLIENT_SECURE_CONNECTION {
+string[$len]   auth-plugin-data-part-2 ($len=MAX(13, length of auth-plugin-data - 8))
+  if capabilities & CLIENT_PLUGIN_AUTH {
+string[NUL]    auth-plugin name
+  }
+     */
+    return 1 ;
   }
 }

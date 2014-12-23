@@ -25,7 +25,21 @@ public class DataServer implements IDataServer{
     this.password = password;
     this.ip = ip;
     this.port = port;
-    initConnectionPool();
+ //   initConnectionPool();
+  }
+  public int getPort() {
+    return port;
+  }
+  public String getIP() {
+    return ip;
+  }
+  public String getUsername()
+  {
+    return username;
+  }
+  public String getPassword()
+  {
+    return password;
   }
   public String getName()
   {

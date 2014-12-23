@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package hit.outdb.NIO;
+package com.alibaba.cobar.net;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
@@ -26,16 +26,24 @@ import java.util.Set;
 
 import org.apache.log4j.Logger;
 
+import com.alibaba.cobar.net.factory.FrontendConnectionFactory;
 
+/**
+ * @author xianmao.hexm
+ */
 public final class NIOAcceptor extends Thread {
     private static final Logger LOGGER = Logger.getLogger(NIOAcceptor.class);
+    private static final AcceptIdGenerator ID_GENERATOR = new AcceptIdGenerator();
 
     private final int port;
     private final Selector selector;
     private final ServerSocketChannel serverChannel;
+    private final FrontendConnectionFactory factory;
+    private NIOProcessor[] processors;
+    private int nextProcessor;
     private long acceptCount;
 
-    public NIOAcceptor(String name, int port) throws IOException {
+    public NIOAcceptor(String name, int port, FrontendConnectionFactory factory) throws IOException {
         super.setName(name);
         this.port = port;
         this.selector = Selector.open();
@@ -43,6 +51,7 @@ public final class NIOAcceptor extends Thread {
         this.serverChannel.socket().bind(new InetSocketAddress(port));
         this.serverChannel.configureBlocking(false);
         this.serverChannel.register(selector, SelectionKey.OP_ACCEPT);
+        this.factory = factory;
     }
 
     public int getPort() {
@@ -81,7 +90,7 @@ public final class NIOAcceptor extends Thread {
             }
         }
     }
-    // 生产到NIOReactor中
+
     private void accept() {
         SocketChannel channel = null;
         try {

@@ -57,9 +57,22 @@ public class PacketUtils {
     public byte read(int i) {
       return data[i];
     }
+    public void writeUB1(ByteBuffer buffer, byte i) {
+      buffer.put(i);
+    }
 
     public byte read() {
       return data[position++];
+    }
+
+    public void writeUB2(ByteBuffer buffer, int i) {
+      buffer.put((byte)i);
+      buffer.put((byte)(i >> 8));
+    }
+    public void writeUB3(ByteBuffer buffer, int i) {
+      buffer.put((byte)i);
+      buffer.put((byte)(i >> 8));
+      buffer.put((byte)(i >> 16));
     }
 
     public int readUB2() {

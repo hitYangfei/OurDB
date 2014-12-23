@@ -34,6 +34,10 @@ public class LoadBalanceDataSource extends DataSource {
     DataSource rtn = blStrategy.getOneDataSource(read_sources);
     return rtn.getConnection(isReadOnly);
   }
-
+  public void initConnPool() {
+    for(DataSource ds : read_sources) {
+      ds.initConnPool();
+    }
+  }
 
 }

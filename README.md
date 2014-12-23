@@ -2,7 +2,7 @@
 Ourdb is a middle level between application and mysql.<br>
 The purpose of Ourdb is make distrbited mysql cluster easily.<br>
 User can use it just like a mysql instance . JDBC is supported<br>
-It's for OLAP and Load-Balance<br>
+It's for OLAP , OLTP and Load-Balance ......<br>
 <h1>the feature of Ourdb </h1>
 *Load-Balance<br>
 *read and write split<br>

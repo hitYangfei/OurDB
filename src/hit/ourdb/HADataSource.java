@@ -57,5 +57,7 @@ public class HADataSource extends DataSource {
   {
     return getMaster().getConn();
   }
-
+  public void initConnPool() {
+    active.initConnPool();
+  }
 }

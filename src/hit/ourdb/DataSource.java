@@ -2,6 +2,9 @@
 package hit.ourdb;
 
 import java.sql.Connection;
+import java.util.List;
+import java.util.ArrayList;
+import hit.ourdb.NIO.BackendConnection;
 
 public abstract class DataSource {
   protected DataServer master;
@@ -9,6 +12,7 @@ public abstract class DataSource {
   protected DataSourceType type;
   protected DataSource parent;
   private String name;
+  protected List<BackendConnection> backendConnPool = new ArrayList<BackendConnection>(10);
   public DataSource(String name)
   {
     this.name = name;
@@ -64,6 +68,7 @@ public abstract class DataSource {
   {
     return doGetConnection(isReadOnly);
   }
+  public abstract void initConnPool();
   public abstract DataServer doGetMaster();
   public abstract void doHandleAbnormal(DataSource source);
   public abstract void doHandleWakeup(DataSource source);

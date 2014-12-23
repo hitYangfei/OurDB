@@ -32,6 +32,9 @@ public class RWSplitDataSource extends DataSource {
     }
     return write_source.getConnection(isReadOnly);
   }
-
+  public void initConnPool() {
+    write_source.initConnPool();
+    read_source.initConnPool();
+  }
 
 }

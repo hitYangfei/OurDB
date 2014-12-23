@@ -18,16 +18,23 @@ import org.apache.log4j.xml.DOMConfigurator;
 
 import hit.ourdb.*;
 import hit.ourdb.NIO.*;
+import hit.ourdb.worker.*;
 
 public class MainTest
 {
   private static final Logger logger = Logger.getLogger(MainTest.class);
-  public static void main(String[] argvs)
-  {
-    try {
+  public static void main(String[] argvs) {
     DOMConfigurator.configure("/home/yangfei/dbscale/ourdb/src/log4j.xml");
     logger.info("start test");
-    InetSocketAddress ip = new InetSocketAddress("127.0.0.1", 3306);
+    BackendWorker worker = BackendWorker.instance();
+    worker.init();
+    /*FrontendWorker front = new FrontendWorker();
+    front.NIOAcceptor.start();*/
+  }
+ /* public static void main(String[] argvs)
+  {
+    try {
+        InetSocketAddress ip = new InetSocketAddress("127.0.0.1", 3306);
     BackendConnection conn = new BackendConnection(ip);
     logger.info("start a worker");
     NIOWorker  worker = new NIOWorker();
@@ -38,7 +45,7 @@ public class MainTest
     } catch(IOException e) {
       System.out.println(e);
     }
-  }
+  }*/
   public static void DataSource()
   {
     System.out.println("ServerDataSource test........");
