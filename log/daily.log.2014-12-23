@@ -1,0 +1,523 @@
+[2014-12-23 22:34:34 INFO ] [main] (MainTest:28) - start test
+[2014-12-23 22:34:34 INFO ] [main] (hit.ourdb.ServerDataSource:40) - masterinit conn 0
+[2014-12-23 22:34:34 INFO ] [main] (hit.ourdb.ServerDataSource:40) - masterinit conn 1
+[2014-12-23 22:34:34 INFO ] [main] (hit.ourdb.ServerDataSource:40) - masterinit conn 2
+[2014-12-23 22:34:34 INFO ] [main] (hit.ourdb.ServerDataSource:40) - masterinit conn 3
+[2014-12-23 22:34:34 INFO ] [main] (hit.ourdb.ServerDataSource:40) - masterinit conn 4
+[2014-12-23 22:34:34 INFO ] [main] (hit.ourdb.ServerDataSource:40) - masterinit conn 5
+[2014-12-23 22:34:34 INFO ] [main] (hit.ourdb.ServerDataSource:40) - masterinit conn 6
+[2014-12-23 22:34:34 INFO ] [main] (hit.ourdb.ServerDataSource:40) - masterinit conn 7
+[2014-12-23 22:34:34 INFO ] [main] (hit.ourdb.ServerDataSource:40) - masterinit conn 8
+[2014-12-23 22:34:34 INFO ] [main] (hit.ourdb.ServerDataSource:40) - masterinit conn 9
+[2014-12-23 22:34:34 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave1init conn 0
+[2014-12-23 22:34:34 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave1init conn 1
+[2014-12-23 22:34:34 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave1init conn 2
+[2014-12-23 22:34:34 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave1init conn 3
+[2014-12-23 22:34:34 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave1init conn 4
+[2014-12-23 22:34:34 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave1init conn 5
+[2014-12-23 22:34:34 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave1init conn 6
+[2014-12-23 22:34:34 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave1init conn 7
+[2014-12-23 22:34:34 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave1init conn 8
+[2014-12-23 22:34:34 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave1init conn 9
+[2014-12-23 22:34:34 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave2init conn 0
+[2014-12-23 22:34:34 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave2init conn 1
+[2014-12-23 22:34:34 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave2init conn 2
+[2014-12-23 22:34:34 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave2init conn 3
+[2014-12-23 22:34:34 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave2init conn 4
+[2014-12-23 22:34:34 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave2init conn 5
+[2014-12-23 22:34:34 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave2init conn 6
+[2014-12-23 22:34:34 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave2init conn 7
+[2014-12-23 22:34:34 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave2init conn 8
+[2014-12-23 22:34:34 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave2init conn 9
+[2014-12-23 22:35:50 INFO ] [main] (MainTest:28) - start test
+[2014-12-23 22:35:50 INFO ] [main] (hit.ourdb.ServerDataSource:40) - masterinit conn 0
+[2014-12-23 22:35:50 INFO ] [main] (hit.ourdb.ServerDataSource:40) - masterinit conn 1
+[2014-12-23 22:35:50 INFO ] [main] (hit.ourdb.ServerDataSource:40) - masterinit conn 2
+[2014-12-23 22:35:50 INFO ] [main] (hit.ourdb.ServerDataSource:40) - masterinit conn 3
+[2014-12-23 22:35:50 INFO ] [main] (hit.ourdb.ServerDataSource:40) - masterinit conn 4
+[2014-12-23 22:35:50 INFO ] [main] (hit.ourdb.ServerDataSource:40) - masterinit conn 5
+[2014-12-23 22:35:50 INFO ] [main] (hit.ourdb.ServerDataSource:40) - masterinit conn 6
+[2014-12-23 22:35:50 INFO ] [main] (hit.ourdb.ServerDataSource:40) - masterinit conn 7
+[2014-12-23 22:35:50 INFO ] [main] (hit.ourdb.ServerDataSource:40) - masterinit conn 8
+[2014-12-23 22:35:50 INFO ] [main] (hit.ourdb.ServerDataSource:40) - masterinit conn 9
+[2014-12-23 22:35:50 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave1init conn 0
+[2014-12-23 22:35:50 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave1init conn 1
+[2014-12-23 22:35:50 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave1init conn 2
+[2014-12-23 22:35:50 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave1init conn 3
+[2014-12-23 22:35:50 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave1init conn 4
+[2014-12-23 22:35:50 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave1init conn 5
+[2014-12-23 22:35:50 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave1init conn 6
+[2014-12-23 22:35:50 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave1init conn 7
+[2014-12-23 22:35:50 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave1init conn 8
+[2014-12-23 22:35:50 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave1init conn 9
+[2014-12-23 22:35:50 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave2init conn 0
+[2014-12-23 22:35:50 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave2init conn 1
+[2014-12-23 22:35:50 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave2init conn 2
+[2014-12-23 22:35:50 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave2init conn 3
+[2014-12-23 22:35:50 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave2init conn 4
+[2014-12-23 22:35:50 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave2init conn 5
+[2014-12-23 22:35:50 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave2init conn 6
+[2014-12-23 22:35:50 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave2init conn 7
+[2014-12-23 22:35:50 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave2init conn 8
+[2014-12-23 22:35:50 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave2init conn 9
+[2014-12-23 22:35:58 INFO ] [main] (MainTest:28) - start test
+[2014-12-23 22:35:58 INFO ] [main] (hit.ourdb.ServerDataSource:40) - masterinit conn 0
+[2014-12-23 22:35:58 INFO ] [main] (hit.ourdb.ServerDataSource:40) - masterinit conn 1
+[2014-12-23 22:35:58 INFO ] [main] (hit.ourdb.ServerDataSource:40) - masterinit conn 2
+[2014-12-23 22:35:58 INFO ] [main] (hit.ourdb.ServerDataSource:40) - masterinit conn 3
+[2014-12-23 22:35:58 INFO ] [main] (hit.ourdb.ServerDataSource:40) - masterinit conn 4
+[2014-12-23 22:35:58 INFO ] [main] (hit.ourdb.ServerDataSource:40) - masterinit conn 5
+[2014-12-23 22:35:58 INFO ] [main] (hit.ourdb.ServerDataSource:40) - masterinit conn 6
+[2014-12-23 22:35:58 INFO ] [main] (hit.ourdb.ServerDataSource:40) - masterinit conn 7
+[2014-12-23 22:35:58 INFO ] [main] (hit.ourdb.ServerDataSource:40) - masterinit conn 8
+[2014-12-23 22:35:58 INFO ] [main] (hit.ourdb.ServerDataSource:40) - masterinit conn 9
+[2014-12-23 22:35:58 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave1init conn 0
+[2014-12-23 22:35:58 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave1init conn 1
+[2014-12-23 22:35:58 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave1init conn 2
+[2014-12-23 22:35:58 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave1init conn 3
+[2014-12-23 22:35:58 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave1init conn 4
+[2014-12-23 22:35:58 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave1init conn 5
+[2014-12-23 22:35:58 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave1init conn 6
+[2014-12-23 22:35:58 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave1init conn 7
+[2014-12-23 22:35:58 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave1init conn 8
+[2014-12-23 22:35:58 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave1init conn 9
+[2014-12-23 22:35:58 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave2init conn 0
+[2014-12-23 22:35:58 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave2init conn 1
+[2014-12-23 22:35:58 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave2init conn 2
+[2014-12-23 22:35:58 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave2init conn 3
+[2014-12-23 22:35:58 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave2init conn 4
+[2014-12-23 22:35:58 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave2init conn 5
+[2014-12-23 22:35:58 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave2init conn 6
+[2014-12-23 22:35:58 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave2init conn 7
+[2014-12-23 22:35:58 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave2init conn 8
+[2014-12-23 22:35:58 INFO ] [main] (hit.ourdb.ServerDataSource:40) - slave2init conn 9
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.AbstractConnection:74) - connect register OP_CONNECT
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.AbstractConnection:74) - connect register OP_CONNECT
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.AbstractConnection:74) - connect register OP_CONNECT
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.AbstractConnection:74) - connect register OP_CONNECT
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.AbstractConnection:74) - connect register OP_CONNECT
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.AbstractConnection:74) - connect register OP_CONNECT
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.AbstractConnection:74) - connect register OP_CONNECT
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.AbstractConnection:74) - connect register OP_CONNECT
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.AbstractConnection:74) - connect register OP_CONNECT
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.AbstractConnection:74) - connect register OP_CONNECT
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.AbstractConnection:74) - connect register OP_CONNECT
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.AbstractConnection:74) - connect register OP_CONNECT
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.AbstractConnection:74) - connect register OP_CONNECT
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.AbstractConnection:74) - connect register OP_CONNECT
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.AbstractConnection:74) - connect register OP_CONNECT
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.AbstractConnection:74) - connect register OP_CONNECT
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.AbstractConnection:74) - connect register OP_CONNECT
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.AbstractConnection:74) - connect register OP_CONNECT
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.AbstractConnection:74) - connect register OP_CONNECT
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.AbstractConnection:74) - connect register OP_CONNECT
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.AbstractConnection:74) - connect register OP_CONNECT
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.AbstractConnection:74) - connect register OP_CONNECT
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.AbstractConnection:74) - connect register OP_CONNECT
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.AbstractConnection:74) - connect register OP_CONNECT
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.AbstractConnection:74) - connect register OP_CONNECT
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.AbstractConnection:74) - connect register OP_CONNECT
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.AbstractConnection:74) - connect register OP_CONNECT
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.AbstractConnection:74) - connect register OP_CONNECT
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.AbstractConnection:74) - connect register OP_CONNECT
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.AbstractConnection:74) - connect register OP_CONNECT
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.BackendConnection:24) - finish connect in BackendConnection
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.BackendConnection:24) - finish connect in BackendConnection
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.AbstractConnection:58) - register OP_READ
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.BackendConnection:24) - finish connect in BackendConnection
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.AbstractConnection:58) - register OP_READ
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.BackendConnection:24) - finish connect in BackendConnection
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.AbstractConnection:58) - register OP_READ
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.BackendConnection:24) - finish connect in BackendConnection
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.BackendConnection:24) - finish connect in BackendConnection
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.BackendConnection:24) - finish connect in BackendConnection
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.BackendConnection:24) - finish connect in BackendConnection
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.BackendConnection:24) - finish connect in BackendConnection
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.AbstractConnection:58) - register OP_READ
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.BackendConnection:24) - finish connect in BackendConnection
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.AbstractConnection:58) - register OP_READ
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.BackendConnection:24) - finish connect in BackendConnection
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.AbstractConnection:58) - register OP_READ
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.BackendConnection:24) - finish connect in BackendConnection
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.AbstractConnection:58) - register OP_READ
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.BackendConnection:24) - finish connect in BackendConnection
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.AbstractConnection:58) - register OP_READ
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.BackendConnection:24) - finish connect in BackendConnection
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.AbstractConnection:58) - register OP_READ
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.BackendConnection:24) - finish connect in BackendConnection
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.AbstractConnection:58) - register OP_READ
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.BackendConnection:24) - finish connect in BackendConnection
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.AbstractConnection:58) - register OP_READ
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.BackendConnection:24) - finish connect in BackendConnection
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.AbstractConnection:58) - register OP_READ
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.BackendConnection:24) - finish connect in BackendConnection
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.AbstractConnection:58) - register OP_READ
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.BackendConnection:24) - finish connect in BackendConnection
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.AbstractConnection:58) - register OP_READ
+[2014-12-23 22:35:58 INFO ] [connector] (hit.ourdb.NIO.BackendConnection:24) - finish connect in BackendConnection
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.AbstractConnection:58) - register OP_READ
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.AbstractConnection:58) - register OP_READ
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.AbstractConnection:58) - register OP_READ
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.AbstractConnection:58) - register OP_READ
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.AbstractConnection:58) - register OP_READ
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.AbstractConnection:58) - register OP_READ
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.BackendConnection:32) - begin read data in BackendConnection
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:29) - Begin unpack MySQLPacket
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:23) - length of the packet is 74
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:25) - num of the packet is 0
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:25) - protocal version is 0xa
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:27) - server version is 5.6.14
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:29) - thread id is 170
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:31) - auth data part 1 is E+EZu``B
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:36) - server capablilities is 807ff7ff
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:39) - CLIENT_PLUGIN_AUTH enable
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:41) - length of auth-plugin-data is 21
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:49) - CLIENT_SECURE_CONNECTION enable
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:51) - auth-plugin-data-part-2 is *P2K`"':2 mys
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:58) - auth-plugin-name is ql_native_password
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:60) - packet position is 78
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:61) - packet length is 1024
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:62) - unpack MySQLHandshake
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:32) - finish unpack MySQLPacket
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.BackendConnection:32) - begin read data in BackendConnection
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:29) - Begin unpack MySQLPacket
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:23) - length of the packet is 74
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:25) - num of the packet is 0
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:25) - protocal version is 0xa
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:27) - server version is 5.6.14
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:29) - thread id is 169
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:31) - auth data part 1 is @]62:l3W
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:36) - server capablilities is 807ff7ff
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:39) - CLIENT_PLUGIN_AUTH enable
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:41) - length of auth-plugin-data is 21
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:49) - CLIENT_SECURE_CONNECTION enable
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:51) - auth-plugin-data-part-2 is <H4lDN;|! mys
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:58) - auth-plugin-name is ql_native_password
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:60) - packet position is 78
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:61) - packet length is 1024
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:62) - unpack MySQLHandshake
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:32) - finish unpack MySQLPacket
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.BackendConnection:32) - begin read data in BackendConnection
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:29) - Begin unpack MySQLPacket
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:23) - length of the packet is 74
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:25) - num of the packet is 0
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:25) - protocal version is 0xa
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:27) - server version is 5.6.14
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:29) - thread id is 166
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:31) - auth data part 1 is ~cRQ"T^^
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:36) - server capablilities is 807ff7ff
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:39) - CLIENT_PLUGIN_AUTH enable
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:41) - length of auth-plugin-data is 21
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:49) - CLIENT_SECURE_CONNECTION enable
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:51) - auth-plugin-data-part-2 is j]o9k3ZLK mys
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:58) - auth-plugin-name is ql_native_password
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:60) - packet position is 78
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:61) - packet length is 1024
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:62) - unpack MySQLHandshake
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:32) - finish unpack MySQLPacket
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.BackendConnection:32) - begin read data in BackendConnection
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:29) - Begin unpack MySQLPacket
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:23) - length of the packet is 74
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:25) - num of the packet is 0
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:25) - protocal version is 0xa
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:27) - server version is 5.6.14
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:29) - thread id is 174
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:31) - auth data part 1 is <68U%Vcn
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:36) - server capablilities is 807ff7ff
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:39) - CLIENT_PLUGIN_AUTH enable
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:41) - length of auth-plugin-data is 21
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:49) - CLIENT_SECURE_CONNECTION enable
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:51) - auth-plugin-data-part-2 is ,\m.;~-_y mys
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:58) - auth-plugin-name is ql_native_password
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:60) - packet position is 78
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:61) - packet length is 1024
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:62) - unpack MySQLHandshake
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:32) - finish unpack MySQLPacket
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.BackendConnection:32) - begin read data in BackendConnection
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:29) - Begin unpack MySQLPacket
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:23) - length of the packet is 74
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:25) - num of the packet is 0
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:25) - protocal version is 0xa
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:27) - server version is 5.6.14
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:29) - thread id is 171
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:31) - auth data part 1 is l,5e!l!\
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:36) - server capablilities is 807ff7ff
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:39) - CLIENT_PLUGIN_AUTH enable
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:41) - length of auth-plugin-data is 21
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:49) - CLIENT_SECURE_CONNECTION enable
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:51) - auth-plugin-data-part-2 is K:!2v!;E* mys
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:58) - auth-plugin-name is ql_native_password
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:60) - packet position is 78
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:61) - packet length is 1024
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:62) - unpack MySQLHandshake
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:32) - finish unpack MySQLPacket
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.BackendConnection:32) - begin read data in BackendConnection
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:29) - Begin unpack MySQLPacket
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:23) - length of the packet is 78
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:25) - num of the packet is 0
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:25) - protocal version is 0xa
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:27) - server version is 5.6.14-log
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:29) - thread id is 969
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:31) - auth data part 1 is f@MDL2Q&
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:36) - server capablilities is 807ff7ff
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:39) - CLIENT_PLUGIN_AUTH enable
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:41) - length of auth-plugin-data is 21
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:49) - CLIENT_SECURE_CONNECTION enable
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:51) - auth-plugin-data-part-2 is 16YB}o4U0 mys
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:58) - auth-plugin-name is ql_native_password
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:60) - packet position is 82
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:61) - packet length is 1024
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:62) - unpack MySQLHandshake
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:32) - finish unpack MySQLPacket
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.BackendConnection:32) - begin read data in BackendConnection
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:29) - Begin unpack MySQLPacket
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:23) - length of the packet is 78
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:25) - num of the packet is 0
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:25) - protocal version is 0xa
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:27) - server version is 5.6.14-log
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:29) - thread id is 973
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:31) - auth data part 1 is 9=egTNjM
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:36) - server capablilities is 807ff7ff
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:39) - CLIENT_PLUGIN_AUTH enable
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:41) - length of auth-plugin-data is 21
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:49) - CLIENT_SECURE_CONNECTION enable
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:51) - auth-plugin-data-part-2 is T4D;;TuoN mys
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:58) - auth-plugin-name is ql_native_password
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:60) - packet position is 82
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:61) - packet length is 1024
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:62) - unpack MySQLHandshake
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:32) - finish unpack MySQLPacket
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.BackendConnection:32) - begin read data in BackendConnection
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:29) - Begin unpack MySQLPacket
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:23) - length of the packet is 78
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:25) - num of the packet is 0
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:25) - protocal version is 0xa
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:27) - server version is 5.6.14-log
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:29) - thread id is 972
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:31) - auth data part 1 is ,9udvC.W
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:36) - server capablilities is 807ff7ff
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:39) - CLIENT_PLUGIN_AUTH enable
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:41) - length of auth-plugin-data is 21
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:49) - CLIENT_SECURE_CONNECTION enable
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:51) - auth-plugin-data-part-2 is E?L?8:Y1+ mys
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:58) - auth-plugin-name is ql_native_password
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:60) - packet position is 82
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:61) - packet length is 1024
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:62) - unpack MySQLHandshake
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:32) - finish unpack MySQLPacket
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.BackendConnection:32) - begin read data in BackendConnection
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:29) - Begin unpack MySQLPacket
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:23) - length of the packet is 78
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:25) - num of the packet is 0
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:25) - protocal version is 0xa
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:27) - server version is 5.6.14-log
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:29) - thread id is 970
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:31) - auth data part 1 is ny:Qh8|*
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:36) - server capablilities is 807ff7ff
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:39) - CLIENT_PLUGIN_AUTH enable
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:41) - length of auth-plugin-data is 21
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:49) - CLIENT_SECURE_CONNECTION enable
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:51) - auth-plugin-data-part-2 is Re'/XMZ[9 mys
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:58) - auth-plugin-name is ql_native_password
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:60) - packet position is 82
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:61) - packet length is 1024
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:62) - unpack MySQLHandshake
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:32) - finish unpack MySQLPacket
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.BackendConnection:32) - begin read data in BackendConnection
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:29) - Begin unpack MySQLPacket
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:23) - length of the packet is 74
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:25) - num of the packet is 0
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:25) - protocal version is 0xa
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:27) - server version is 5.6.14
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:29) - thread id is 173
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:31) - auth data part 1 is ,6l=+]sJ
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:36) - server capablilities is 807ff7ff
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:39) - CLIENT_PLUGIN_AUTH enable
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:41) - length of auth-plugin-data is 21
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:49) - CLIENT_SECURE_CONNECTION enable
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:51) - auth-plugin-data-part-2 is UW7IJw:[: mys
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:58) - auth-plugin-name is ql_native_password
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:60) - packet position is 78
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:61) - packet length is 1024
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:62) - unpack MySQLHandshake
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:32) - finish unpack MySQLPacket
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.BackendConnection:32) - begin read data in BackendConnection
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:29) - Begin unpack MySQLPacket
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:23) - length of the packet is 78
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:25) - num of the packet is 0
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:25) - protocal version is 0xa
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:27) - server version is 5.6.14-log
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:29) - thread id is 976
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:31) - auth data part 1 is d"wW+ld.
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:36) - server capablilities is 807ff7ff
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:39) - CLIENT_PLUGIN_AUTH enable
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:41) - length of auth-plugin-data is 21
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:49) - CLIENT_SECURE_CONNECTION enable
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:51) - auth-plugin-data-part-2 is ?\2!NGXdn mys
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:58) - auth-plugin-name is ql_native_password
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:60) - packet position is 82
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:61) - packet length is 1024
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:62) - unpack MySQLHandshake
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:32) - finish unpack MySQLPacket
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.BackendConnection:32) - begin read data in BackendConnection
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:29) - Begin unpack MySQLPacket
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:23) - length of the packet is 78
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:25) - num of the packet is 0
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:25) - protocal version is 0xa
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:27) - server version is 5.6.14-log
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:29) - thread id is 971
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:31) - auth data part 1 is g-IiSE?L
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:36) - server capablilities is 807ff7ff
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:39) - CLIENT_PLUGIN_AUTH enable
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:41) - length of auth-plugin-data is 21
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:49) - CLIENT_SECURE_CONNECTION enable
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:51) - auth-plugin-data-part-2 is l%o%fRK^w mys
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:58) - auth-plugin-name is ql_native_password
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:60) - packet position is 82
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:61) - packet length is 1024
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:62) - unpack MySQLHandshake
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:32) - finish unpack MySQLPacket
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.BackendConnection:32) - begin read data in BackendConnection
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:29) - Begin unpack MySQLPacket
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:23) - length of the packet is 74
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:25) - num of the packet is 0
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:25) - protocal version is 0xa
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:27) - server version is 5.6.14
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:29) - thread id is 165
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:31) - auth data part 1 is j=/sy$Em
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:36) - server capablilities is 807ff7ff
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:39) - CLIENT_PLUGIN_AUTH enable
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:41) - length of auth-plugin-data is 21
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:49) - CLIENT_SECURE_CONNECTION enable
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:51) - auth-plugin-data-part-2 is y,l\i{P\^ mys
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:58) - auth-plugin-name is ql_native_password
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:60) - packet position is 78
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:61) - packet length is 1024
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:62) - unpack MySQLHandshake
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:32) - finish unpack MySQLPacket
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.BackendConnection:32) - begin read data in BackendConnection
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:29) - Begin unpack MySQLPacket
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:23) - length of the packet is 74
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:25) - num of the packet is 0
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:25) - protocal version is 0xa
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:27) - server version is 5.6.14
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:29) - thread id is 172
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:31) - auth data part 1 is emu&Vbg]
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:36) - server capablilities is 807ff7ff
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:39) - CLIENT_PLUGIN_AUTH enable
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:41) - length of auth-plugin-data is 21
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:49) - CLIENT_SECURE_CONNECTION enable
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:51) - auth-plugin-data-part-2 is &r/0CB_8: mys
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:58) - auth-plugin-name is ql_native_password
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:60) - packet position is 78
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:61) - packet length is 1024
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:62) - unpack MySQLHandshake
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:32) - finish unpack MySQLPacket
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.BackendConnection:32) - begin read data in BackendConnection
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:29) - Begin unpack MySQLPacket
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:23) - length of the packet is 78
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:25) - num of the packet is 0
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:25) - protocal version is 0xa
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:27) - server version is 5.6.14-log
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:29) - thread id is 975
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:31) - auth data part 1 is n4T-#f[v
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:36) - server capablilities is 807ff7ff
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:39) - CLIENT_PLUGIN_AUTH enable
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:41) - length of auth-plugin-data is 21
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:49) - CLIENT_SECURE_CONNECTION enable
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:51) - auth-plugin-data-part-2 is _cQNqmR1> mys
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:58) - auth-plugin-name is ql_native_password
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:60) - packet position is 82
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:61) - packet length is 1024
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:62) - unpack MySQLHandshake
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:32) - finish unpack MySQLPacket
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.BackendConnection:32) - begin read data in BackendConnection
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:29) - Begin unpack MySQLPacket
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:23) - length of the packet is 78
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:25) - num of the packet is 0
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:25) - protocal version is 0xa
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:27) - server version is 5.6.14-log
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:29) - thread id is 974
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:31) - auth data part 1 is g-Jlc,P,
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:36) - server capablilities is 807ff7ff
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:39) - CLIENT_PLUGIN_AUTH enable
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:41) - length of auth-plugin-data is 21
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:49) - CLIENT_SECURE_CONNECTION enable
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:51) - auth-plugin-data-part-2 is dwHCVdwH? mys
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:58) - auth-plugin-name is ql_native_password
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:60) - packet position is 82
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:61) - packet length is 1024
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:62) - unpack MySQLHandshake
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:32) - finish unpack MySQLPacket
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.BackendConnection:32) - begin read data in BackendConnection
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:29) - Begin unpack MySQLPacket
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:23) - length of the packet is 74
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:25) - num of the packet is 0
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:25) - protocal version is 0xa
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:27) - server version is 5.6.14
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:29) - thread id is 167
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:31) - auth data part 1 is O)|Vwvk5
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:36) - server capablilities is 807ff7ff
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:39) - CLIENT_PLUGIN_AUTH enable
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:41) - length of auth-plugin-data is 21
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:49) - CLIENT_SECURE_CONNECTION enable
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:51) - auth-plugin-data-part-2 is o:sT*s&a6 mys
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:58) - auth-plugin-name is ql_native_password
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:60) - packet position is 78
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:61) - packet length is 1024
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:62) - unpack MySQLHandshake
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:32) - finish unpack MySQLPacket
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.BackendConnection:32) - begin read data in BackendConnection
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:29) - Begin unpack MySQLPacket
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:23) - length of the packet is 78
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:25) - num of the packet is 0
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:25) - protocal version is 0xa
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:27) - server version is 5.6.14-log
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:29) - thread id is 968
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:31) - auth data part 1 is VE5y#?Tg
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:36) - server capablilities is 807ff7ff
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:39) - CLIENT_PLUGIN_AUTH enable
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:41) - length of auth-plugin-data is 21
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:49) - CLIENT_SECURE_CONNECTION enable
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:51) - auth-plugin-data-part-2 is J$t@!#,R9 mys
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:58) - auth-plugin-name is ql_native_password
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:60) - packet position is 82
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:61) - packet length is 1024
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:62) - unpack MySQLHandshake
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:32) - finish unpack MySQLPacket
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.BackendConnection:32) - begin read data in BackendConnection
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:29) - Begin unpack MySQLPacket
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:23) - length of the packet is 74
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:25) - num of the packet is 0
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:25) - protocal version is 0xa
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:27) - server version is 5.6.14
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:29) - thread id is 168
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:31) - auth data part 1 is Es7Rx*`(
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:36) - server capablilities is 807ff7ff
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:39) - CLIENT_PLUGIN_AUTH enable
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:41) - length of auth-plugin-data is 21
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:49) - CLIENT_SECURE_CONNECTION enable
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:51) - auth-plugin-data-part-2 is $8.y=bT^] mys
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:58) - auth-plugin-name is ql_native_password
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:60) - packet position is 78
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:61) - packet length is 1024
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:62) - unpack MySQLHandshake
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:32) - finish unpack MySQLPacket
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.BackendConnection:32) - begin read data in BackendConnection
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:29) - Begin unpack MySQLPacket
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:23) - length of the packet is 78
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:25) - num of the packet is 0
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:25) - protocal version is 0xa
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:27) - server version is 5.6.14-log
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:29) - thread id is 977
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:31) - auth data part 1 is }tOkP0:s
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:36) - server capablilities is 807ff7ff
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:39) - CLIENT_PLUGIN_AUTH enable
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:41) - length of auth-plugin-data is 21
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:49) - CLIENT_SECURE_CONNECTION enable
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:51) - auth-plugin-data-part-2 is Ug'*</sz+ mys
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:58) - auth-plugin-name is ql_native_password
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:60) - packet position is 82
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:61) - packet length is 1024
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLHandshake:62) - unpack MySQLHandshake
+[2014-12-23 22:35:58 INFO ] [Thread-0] (hit.ourdb.NIO.procotol.MySQLPacket:32) - finish unpack MySQLPacket

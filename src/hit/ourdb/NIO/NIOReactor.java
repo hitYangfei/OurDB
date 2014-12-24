@@ -88,6 +88,7 @@ public final class NIOReactor extends Thread{
             c.read();
         } catch (Throwable e) {
           logger.error("read error");
+          logger.error(e);
         }
     }
 

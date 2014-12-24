@@ -28,6 +28,10 @@ public class PacketUtils {
       this.length = data.length;
       this.position = 0;
     }
+    public PacketUtils() {
+      this.length = 0;
+      this.data = new byte[0];
+    }
 
 
     public int length() {
@@ -64,7 +68,9 @@ public class PacketUtils {
     public byte read() {
       return data[position++];
     }
-
+    public void writeByte(ByteBuffer buffer, byte i) {
+      buffer.put((byte)i);
+    }
     public void writeUB2(ByteBuffer buffer, int i) {
       buffer.put((byte)i);
       buffer.put((byte)(i >> 8));
@@ -74,6 +80,28 @@ public class PacketUtils {
       buffer.put((byte)(i >> 8));
       buffer.put((byte)(i >> 16));
     }
+    public void writeUB4(ByteBuffer buffer, long i) {
+      buffer.put((byte)i);
+      buffer.put((byte)(i >> 8));
+      buffer.put((byte)(i >> 16));
+      buffer.put((byte)(i >> 24));
+    }
+    public void writeStringWithNULL(ByteBuffer buffer, String str) {
+      buffer.put(str.getBytes());
+      buffer.put((byte)0);
+    }
+    public void writeString(ByteBuffer buffer, String str) {
+      buffer.put(str.getBytes());
+    }
+    public void writeBytesWithNULL(ByteBuffer buffer, byte[] bytes) {
+      buffer.put(bytes);
+      buffer.put((byte)0);
+    }
+
+    public void writeBytes(ByteBuffer buffer, byte[] bytes) {
+      buffer.put(bytes);
+    }
+
 
     public int readUB2() {
       final byte[] b = this.data;

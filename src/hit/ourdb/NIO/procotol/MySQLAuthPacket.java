@@ -15,7 +15,7 @@ string[n]      auth-response
 string[NUL]    auth-response
   }
   if capabilities & CLIENT_CONNECT_WITH_DB {
-string[NUL]    database
+string[NUL]    schema
   }
   if capabilities & CLIENT_PLUGIN_AUTH {
 string[NUL]    auth plugin name
@@ -30,6 +30,8 @@ lenenc-str     value
 package hit.ourdb.NIO.procotol;
 
 public class MySQLAuthPacket extends MySQLPacket {
+  public static final byte CLIENT_CHARSET            = 8;
+  public static final int CLIENT_MAX_PACKET_SIZE     = 1024*1024;
   public static final long defaultClientCapabilities = CapabilityFlags.CLIENT_LONG_PASSWORD
                                                 | CapabilityFlags.CLIENT_PROTOCOL_41
                                                 | CapabilityFlags.CLIENT_SECURE_CONNECTION
@@ -42,19 +44,22 @@ public class MySQLAuthPacket extends MySQLPacket {
 
   public long clientFlags;
   public long maxPacketSize;
-  public int charsetIndex;
+  public byte charsetIndex;
   public byte[] extra;// from FILLER(23)
   public String user;
   public byte[] password;
-  public String database;
+  public String schema;
   public byte[] scramble;
-  public MySQLAuthPacket(long clientFlags, byte[] scramble, String user, String password, String database)
+  public MySQLAuthPacket(long clientFlags, byte[] scramble, String user, String password, String schema)
   {
+    super();
     this.clientFlags = clientFlags;
     this.scramble = scramble;
     this.user = user;
     this.password = password.getBytes();
-    this.database = database;
+    this.schema = schema;
+    this.maxPacketSize = CLIENT_MAX_PACKET_SIZE;
+    this.charsetIndex = 8;
   }
   public void unpackBody()
   {
@@ -62,10 +67,21 @@ public class MySQLAuthPacket extends MySQLPacket {
   }
   public void packBody()
   {
-   logger.debug("sss");
+    logger.debug("begin to packBody for AuthPacket");
+    logger.debug("only support no password now");
+    packet.writeUB4(buffer, clientFlags);
+    packet.writeUB4(buffer, maxPacketSize);
+    packet.writeByte(buffer, charsetIndex);
+    packet.writeBytes(buffer, FILLER);
+    packet.writeStringWithNULL(buffer, user);
+    // no password
+    packet.writeByte(buffer, (byte)0);
+
+    packet.writeStringWithNULL(buffer, schema);
+
   }
   public int getPacketLength()
   {
-    return 4;
+    return 4 + 4 + 1 + 23 + user.length() + 1 + 1 + schema.length() + 1;
   }
 }

@@ -20,9 +20,9 @@ public class MySQLHandshake extends MySQLPacket {
     super(buffer);
   }
   public byte[] getScramble() {
-    byte[] scramble = new byte[16];
+    byte[] scramble = new byte[8 + restOfScrambleBuff.length];
     System.arraycopy(seed, 0 ,scramble, 0, 8);
-    System.arraycopy(restOfScrambleBuff, 0 , scramble, 8, 8);
+    System.arraycopy(restOfScrambleBuff, 0 , scramble, 8, restOfScrambleBuff.length);
     logger.debug("the scramble str is " + (new String(scramble)));
     return scramble;
   }
