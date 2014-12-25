@@ -36,7 +36,7 @@ public class ServerDataSource extends DataSource {
     BackendWorker worker = BackendWorker.instance();
     DataServer ds = getMaster();
     String name = ds.getName();
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < 1; i++) {
       logger.info(name + "init conn " + i); 
       try {
         BackendConnection conn = new BackendConnection(ds.getIP(), ds.getPort());

@@ -33,11 +33,14 @@ public class MySQLAuthPacket extends MySQLPacket {
   public static final byte CLIENT_CHARSET            = 8;
   public static final int CLIENT_MAX_PACKET_SIZE     = 1024*1024;
   public static final long defaultClientCapabilities = CapabilityFlags.CLIENT_LONG_PASSWORD
+                                                | CapabilityFlags.CLIENT_LONG_FLAG
+                                                | CapabilityFlags.CLIENT_CONNECT_WITH_DB
+                                                | CapabilityFlags.CLIENT_LOCAL_FILES
                                                 | CapabilityFlags.CLIENT_PROTOCOL_41
+                                                | CapabilityFlags.CLIENT_TRANSACTIONS
                                                 | CapabilityFlags.CLIENT_SECURE_CONNECTION
                                                 | CapabilityFlags.CLIENT_MULTI_RESULTS
-                                                | CapabilityFlags.CLIENT_REMEMBER_OPTIONS
-                                                | CapabilityFlags.CLIENT_FOUND_ROWS
+                                                | CapabilityFlags.CLIENT_PLUGIN_AUTH
                                                 | CapabilityFlags.CLIENT_MULTI_STATEMENTS;
 
   private static final byte[] FILLER = new byte[23];
@@ -78,10 +81,11 @@ public class MySQLAuthPacket extends MySQLPacket {
     packet.writeByte(buffer, (byte)0);
 
     packet.writeStringWithNULL(buffer, schema);
+    packet.writeStringWithNULL(buffer, "mysql_native_password");
 
   }
   public int getPacketLength()
   {
-    return 4 + 4 + 1 + 23 + user.length() + 1 + 1 + schema.length() + 1;
+    return 4 + 4 + 1 + 23 + user.length() + 1 + 1 + schema.length() + 1 + 22;
   }
 }

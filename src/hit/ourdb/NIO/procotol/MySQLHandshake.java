@@ -10,6 +10,7 @@ public class MySQLHandshake extends MySQLPacket {
   public byte[] serverVersion;
   public long threadId;
   public byte[] seed;
+  public byte[] seed2;
   public int serverCapabilities;
   public byte serverCharsetIndex;
   public int serverStatus;
@@ -20,9 +21,9 @@ public class MySQLHandshake extends MySQLPacket {
     super(buffer);
   }
   public byte[] getScramble() {
-    byte[] scramble = new byte[8 + restOfScrambleBuff.length];
+    byte[] scramble = new byte[20];
     System.arraycopy(seed, 0 ,scramble, 0, 8);
-    System.arraycopy(restOfScrambleBuff, 0 , scramble, 8, restOfScrambleBuff.length);
+    System.arraycopy(seed2, 0 , scramble, 8, 12);
     logger.debug("the scramble str is " + (new String(scramble)));
     return scramble;
   }
@@ -41,10 +42,10 @@ public class MySQLHandshake extends MySQLPacket {
     serverStatus = packet.readUB2();
     serverCapabilities |= (packet.readUB2() << 16);
     logger.info("server capablilities is " + Integer.toHexString(serverCapabilities));
-    int length = 0;
+    byte length = 0;
     if ((serverCapabilities & CapabilityFlags.CLIENT_PLUGIN_AUTH) != 0) {
       logger.info("CLIENT_PLUGIN_AUTH enable");
-      length = (int)packet.readUB4();
+      length = packet.read();
       logger.info("length of auth-plugin-data is " + length);
     } else {
       logger.info("CLIENT_PLUGIN_AUTH disable");
@@ -54,8 +55,9 @@ public class MySQLHandshake extends MySQLPacket {
     packet.move(10);
     if ((serverCapabilities & CapabilityFlags.CLIENT_SECURE_CONNECTION) !=0 ) {
       logger.info("CLIENT_SECURE_CONNECTION enable");
-
-      logger.info("auth-plugin-data-part-2 is " + (new String(packet.readBytes(Math.max(13, length - 8)))));
+      seed2 = packet.readBytes(Math.max(13, length-8) -1);
+      logger.info("auth-plugin-data-part-2 is " + (new String(seed2)));
+      packet.move(1);
     } else {
       logger.info("CLIENT_SECURE_CONNECTION disable");
     }

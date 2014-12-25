@@ -86,6 +86,7 @@ public final class NIOReactor extends Thread{
     private void read(NIOConnection c) {
         try {
             c.read();
+            c.register(selector);
         } catch (Throwable e) {
           logger.error("read error");
           logger.error(e);

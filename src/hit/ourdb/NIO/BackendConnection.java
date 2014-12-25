@@ -15,14 +15,19 @@ public class BackendConnection extends AbstractConnection {
     private byte packetId = 0;
     private String username;
     private String password;
+    private int event;
+ //   private MySQLHandshake packet
     public void reset() {
       packetId = 0;
+      event = NIOEvent.HAND_SHAKE;
     }
     public BackendConnection(String ip, int port) throws IOException {
       super(ip, port);
+      this.event = NIOEvent.HAND_SHAKE;
     }
     public BackendConnection(InetSocketAddress address) throws IOException {
       super(address);
+      this.event = NIOEvent.HAND_SHAKE;
     }
     public void setUsername(String user) {
       this.username = user;
@@ -39,10 +44,40 @@ public class BackendConnection extends AbstractConnection {
         return false;
       }
     }
+    void handlerHandShake() throws IOException{
+      ByteBuffer buffer = super.readBuffer;
+      buffer.clear();
+      int count = channel.read(buffer);
+      if (count > 0) {
+        MySQLHandshake packet = new MySQLHandshake(buffer);
+        packet.unpack();
+        this.packetId = packet.getPacketId();
+      }
+    }
+    void handlerAuthRequest() {
+    }
+    void handlerAuthResponse() {
+    }
+
     @Override
     public void read() throws IOException {
       logger.info("begin read data in BackendConnection");
+   /*   switch (event) {
+        case NIOEvent.HAND_SHAKE:
+          handlerHandShake();
+          break;
+        case NIOEvent.AUTH_REQUEST:
+          handlerAuthRequest();
+          break;
+        case NIOEvent.AUTH_RESPONSE:
+          handlerAuthResponse();
+          break;
+        defaults:
+          System.out.println("the event is not exist");
+      }*/
+
       ByteBuffer buffer = super.readBuffer;
+      if (event == NIOEvent.HAND_SHAKE) {
       buffer.clear();
       int count = channel.read(buffer);
       if (count > 0) {
@@ -61,9 +96,15 @@ public class BackendConnection extends AbstractConnection {
           count = channel.write(writeBuffer);
           logger.info("write to mysql server " + count);
         }
+      event = NIOEvent.AUTH_RESPONSE;
+
+      }
+      } else if(event == NIOEvent.AUTH_RESPONSE) {
+        logger.info("begin to read data after write some data");
         buffer.clear();
-        count = channel.read(buffer);
+        int count = channel.read(buffer);
         logger.info("read from mysql server " + count);
+        buffer.flip();
         if (count > 0) {
           byte response = buffer.get(4);
           if (response == 0) {
@@ -74,12 +115,16 @@ public class BackendConnection extends AbstractConnection {
             logger.error("response is not normal " + response);
           }
         }
-     }
-      else {
-        logger.info("read nothing");
-      }
-      if (count >= 1024) {
-        logger.error("clientbuffer is too small.[1024]");
+        else {
+          logger.info("read nothing");
+        }
+        if (count >= 1024) {
+          logger.error("clientbuffer is too small.[1024]");
+        }
+
+        event = 4;
+      } else {
+        logger.info("not handler");
       }
     }
 }

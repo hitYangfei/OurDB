@@ -41,7 +41,7 @@ public abstract class MySQLPacket {
   }
   protected void packHeader()
   {
-    this.packetLength = 4 + getPacketLength();
+    this.packetLength = getPacketLength();
  //   buffer.allocate(this.packetLength + 4 );
     packet.writeUB3(buffer, this.packetLength);
     packet.writeUB1(buffer, this.packetId);

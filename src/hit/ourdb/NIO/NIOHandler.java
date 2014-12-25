@@ -12,14 +12,35 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ * 
  */
-package com.alibaba.cobar.net;
+package hit.ourdb.NIO;
 
-/**
- * @author xianmao.hexm
- */
-public interface NIOHandler {
+public class NIOHandler {
+  private NIOConnection conn;
+  public NIOHandler(NIOConnection conn) {
+    this.conn = conn;
+  }
+  void handle(int event) {
+    switch (event) {
+      case NIOEvent.HAND_SHAKE:
+        handlerHandShake();
+        break;
+      case NIOEvent.AUTH_REQUEST:
+        handlerAuthRequest();
+        break;
+      case NIOEvent.AUTH_RESPONSE:
+        handlerAuthResponse();
+        break;
+      defaults:
+        System.out.println("the event is not exist");
+    }
+  }
+  void handlerHandShake() {
 
-    void handle(byte[] data);
-
+  }
+  void handlerAuthRequest() {
+  }
+  void handlerAuthResponse() {
+  }
 }
